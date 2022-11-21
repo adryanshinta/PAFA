@@ -4,8 +4,8 @@ import Detail from '../views/pages/detail';
 
 const routes = {
   '/': Beranda, // default page
-  '/now-playing': Beranda,
-  '/upcoming': About,
+  '/beranda': Beranda,
+  '/about-us': About,
   '/detail/:id': Detail,
 };
 
