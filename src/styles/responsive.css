@@ -70,3 +70,20 @@
       grid-template-columns: repeat(5, 1fr);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .search-container {
+    flex-direction: column;
+    position: static;
+  }
+
+  .search-container > input {
+    width: 100%;
+    margin-bottom: 12px;
+    
+  }
+
+  .search-container > button {
+    width: 100%;
+  }
+}

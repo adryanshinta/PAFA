@@ -41,6 +41,8 @@
     font-size: 18px;
     padding: 8px;
     cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
   }
    
   .app-bar .app-bar__brand {
@@ -77,8 +79,98 @@
     padding: 8px;
     margin-bottom: 5px;
     width: 100%;
+    min-width: 44px;
+    min-height: 44px;
   }
    
+  /* hero jumbotron */
+  .hero {
+    display: grid;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-image: url("../public/images/heros/family-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: auto;
+  }
+  
+  .hero-inner {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .hero-title {
+    font-weight: 400;
+    color:white;
+    font-size: 60px;
+    text-shadow: 2px 2px #C68B59;
+    font-weight: bolder;
+  }
+  
+  .hero-tagline {
+    color: #C68B59;
+    margin-top: 16px;
+    font-size: 35px;
+    line-height: 48px;
+    font-weight: 300;
+    text-shadow: 2px 2px #fffdfa;
+    font-weight: bolder;
+  }
+  /* Search */
+  .search-container {
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 5px;
+    display: flex;
+    position: sticky;
+    top: 10px;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+  }
+  
+  .search-container > input {
+    width: 75%;
+    padding: 16px;
+    border: 0;
+    border-bottom: 1px solid #C68B59;
+    font-weight: bold;
+    background-color: #F4DFD0;
+    
+    
+  }
+  
+  .search-container > input:focus {
+    outline: 0;
+    border-bottom: 2px solid #C68B59;
+    
+  }
+  
+  .search-container > input:focus::placeholder {
+    font-weight: bold;
+  }
+  
+  .search-container > input::placeholder {
+    color: #C68B59;
+    font-weight: normal;
+  }
+  
+  .search-container > button {
+    width: 23%;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 16px;
+    background-color: #C68B59;
+    border: 0;
+    text-transform: uppercase;
+  }
+  
+  
+
   /*
     Main Content
   */
@@ -195,6 +287,7 @@
    
   footer {
     padding: 16px;
+    background-color: #C68B59;
   }
    
   footer p {
