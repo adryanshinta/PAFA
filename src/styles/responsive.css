@@ -86,4 +86,34 @@
   .search-container > button {
     width: 100%;
   }
+
+}
+
+@media screen and (max-width: 700px) {
+  .container{
+    position: static;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+  }
+
+  .container h1 {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .container form input {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .container label {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .container form button {
+    width: 100%;
+  }
+  
 }
