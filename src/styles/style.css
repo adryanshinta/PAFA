@@ -409,6 +409,206 @@ login
   color:#C68B59;
 }
 
+/*
+about-us
+*/
+
+.text-container p:nth-child(1){
+  font-family: calibri;
+  font-weight: bold;
+  color: #6d6d6d;
+  font-size: 22px;
+  }
+  
+  .text-container p:nth-child(2){
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  font-size: 60px;
+  }
+  
+  .text-container p:nth-child(3){
+  font-family: myriad pro regular;
+  color: #403e3e;
+  font-size: 30px;
+  line-height: 30px;
+  }
+  
+  .text-container p:nth-child(4){
+  font-family: calibri;
+  color: #403e3e;
+  font-size: 17px;
+  margin-top: 10px;
+  line-height: 30px;
+  }
+  
+  .text-container p{
+  line-height: 0px;
+  margin: 55px 0px 25px;
+  }
+  
+  .text-container{
+  background-position: left;
+  position: relative;
+  left:10%;
+  margin: 20px;
+  padding: 10px;
+  width: 50%;
+  
+  }
+  
+  .text-container button{
+  width: 130px;
+  height: 42px;
+  border-radius: 10px;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  margin: 0px 10px;
+  }
+  
+  .hire-btn{
+  border: 2px solid #373636;
+  color: #373636;
+  }
+  
+  .down-cv{
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: none;
+  }
+  
+  button:active{
+  transform: scale(1.1);
+  }
+  
+  .model{
+  height: 300px;
+  position: relative;
+  bottom: 360px;
+  left: 80%;
+  transform: translateX(-70%);
+   }
+  
+  
+  /*
+  namaprofil
+  */
+  .namatim {
+    width: 95%;
+    margin: 5px ;
+    text-align: center;
+    margin-top: -250px;
+    }
+    
+    .namatim-label {
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: cursive;
+    color: #D27C2C;
+    }
+    
+    .utama-label::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid color #D27C2C;
+    }
+  
+   /*
+   profiltim
+   */
+  
+   .tim{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:6px;
+    margin: 10px;
+    padding: 10px;
+    color: #C68B59;
+    
+     }
+  
+   .our-team{
+    top: 20px;
+    margin: 10px;
+    padding: 10px;
+    left: 5px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+    padding: 20px;
+    margin-top: 15px;
+  }
+  
+  .our-team img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    }
+  
+  
+  
+  
+  .our-team .pic{
+     width: 100%;
+      height: auto;
+      border-radius: 100%;
+      transform: scale(1);
+      transition: all 0.9s ease 0s;
+  }
+  
+  
+  .our-team:hover .pic:before
+  {
+    height: 100%;
+  }
+  
+  .our-team .pic:after
+  {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    z-index: -1;
+  }
+  
+  .our-team .pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+  
+  
+  
+  .our-team .team-content
+  {
+    margin-bottom: 10px;
+  }
+  
+  .our-team .title{
+    font-size: 22px;
+    font-weight: 700;
+    color:#4e5052;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+  
+  .our-team .post{
+    display: block;
+    font-size: 15px;
+    color:#4e5052;
+    text-transform: capitalize;
+  }
    
   /*
     Footer
