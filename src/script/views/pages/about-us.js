@@ -47,7 +47,7 @@ const About = {
             <img class="pic" src="../images/heros/shinta.jpg" alt="shinta");
           </div>
           <div class="team-content">
-            <h3 class="title">Shinta Nelam Sari Muslim</h3>
+            <h3 class="title">Shinta Nilam Sari Muslim</h3>
             <span class="post">Front End Developer</span>
           </div>
           </div>
