@@ -1,12 +1,22 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-alert */
+import UrlParser from '../../routes/url-parser';
+import PafaDbSource from '../../data/pafadb-source';
+import { createPafaDetailTemplate } from '../templates/template-creator';
+
 const Detail = {
   async render() {
     return `
-        <h2>Detail Page</h2>
+      <div id="restoran" class="restoran"></div>
+      <div id="likeButtonContainer"></div>
       `;
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const pafamily = await PafaDbSource.detailPafa(url.id);
+    const pafaContainer = document.querySelector('#restoran');
+    pafaContainer.innerHTML = createPafaDetailTemplate(pafamily);
   },
 };
 
