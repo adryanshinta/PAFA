@@ -2,7 +2,7 @@
 /* eslint-disable no-alert */
 import UrlParser from '../../routes/url-parser';
 import PafaDbSource from '../../data/pafadb-source';
-import { createPafaDetailTemplate } from '../templates/template-creator';
+import { createPafaDetailTemplate, createLikeButtonTemplate } from '../templates/template-creator';
 
 const Detail = {
   async render() {
@@ -16,7 +16,10 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const pafamily = await PafaDbSource.detailPafa(url.id);
     const pafaContainer = document.querySelector('#restoran');
+    const likeButtonContainer = document.querySelector('#likeButtonContainer');
+
     pafaContainer.innerHTML = createPafaDetailTemplate(pafamily);
+    likeButtonContainer.innerHTML = createLikeButtonTemplate();
   },
 };
 
