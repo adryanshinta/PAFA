@@ -3,6 +3,7 @@
 import UrlParser from '../../routes/url-parser';
 import PafaDbSource from '../../data/pafadb-source';
 import { createPafaDetailTemplate, createLikeButtonTemplate } from '../templates/template-creator';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
   async render() {
@@ -16,10 +17,19 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const pafamily = await PafaDbSource.detailPafa(url.id);
     const pafaContainer = document.querySelector('#restoran');
-    const likeButtonContainer = document.querySelector('#likeButtonContainer');
 
     pafaContainer.innerHTML = createPafaDetailTemplate(pafamily);
-    likeButtonContainer.innerHTML = createLikeButtonTemplate();
+
+    LikeButtonInitiator.init({
+      likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      pafamily: {
+        id: pafamily.id,
+        name: pafamily.name,
+        description: pafamily.description,
+        pictureId: pafamily.pictureId,
+        rating: pafamily.rating,
+      },
+    });
   },
 };
 

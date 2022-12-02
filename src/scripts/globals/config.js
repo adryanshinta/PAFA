@@ -5,6 +5,7 @@ const CONFIG = {
   DATABASE_NAME: 'pafa-catalogue-database',
   DATABASE_VERSION: 1,
   OBJECT_STORE_NAME: 'pafas',
+  WEB_SOCKET_SERVER: 'wss://Pafas-feed.dicoding.dev',
 };
 
 export default CONFIG;
