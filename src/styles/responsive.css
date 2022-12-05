@@ -90,6 +90,14 @@
 }
 
 @media screen and (max-width: 700px) {
+
+  .about-us{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+
   .container{
     position: static;
     margin-left: 10%;
@@ -115,5 +123,32 @@
   .container form button {
     width: 100%;
   }
+
+  .data{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .tim{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+
+  }
   
+  .tim .pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .tombol {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+     
 }

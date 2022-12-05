@@ -12,25 +12,6 @@ const Beranda = {
         </div>
         <h2>BERANDA</h2>
         <article class="data">
-     
-          <article id="orangtua" class="card">
-                      <h2 class="tagline">Orangtua</h2>
-                      <img src="../images/heros/orangtua.jpg");
-                      class="featured-image" alt="orangtua">
-          </article>
-          
-          <article id="anak" class="card">
-                      <h2 class="tagline">Anak</h2>
-                      <img src="../images/heros/anak.jpg");
-                      class="featured-image" alt="orangtua">
-          </article>
-      
-          
-          <article id="ibumuda" class="card">
-                      <h2 class="tagline">Ibu Muda</h2>
-                      <img src="../images/heros/orangtua.jpg");
-                      class="featured-image" alt="ibumuda">
-          </article>
           <div class="pafa-item">
             <div class="pafa-item__header">
               <img class="pafa-item__header__poster" alt="Orangtua"
@@ -38,6 +19,26 @@ const Beranda = {
             </div>
             <div class="pafa-item__content">
               <h3><a href="#">Orang Tua</a></h3>
+            </div>
+          </div>
+
+          <div class="pafa-item">
+            <div class="pafa-item__header">
+              <img class="pafa-item__header__poster" alt="Anak"
+                  src="../images/heros/anak.jpg">
+            </div>
+            <div class="pafa-item__content">
+              <h3><a href="#">Anak</a></h3>
+            </div>
+          </div>
+
+          <div class="pafa-item">
+            <div class="pafa-item__header">
+              <img class="pafa-item__header__poster" alt="Orangtua"
+                  src="../images/heros/orangtua.jpg">
+            </div>
+            <div class="pafa-item__content">
+              <h3><a href="#">Ibu Muda</a></h3>
             </div>
           </div>
       

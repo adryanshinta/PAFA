@@ -2,23 +2,28 @@
 const About = {
   async render() {
     return `
-    <article>
-    <div class="text-container">
-    <p>Hello,</p>
-       <p>WE ARE PAFA</p>
-    <p>Parenting And Family Website</p>
-             <p>PAFA adalah ruang belajar parenting ,family, dan pendidikan. 
-             <br>Disini menyajikan informasi  yang dibutuhkan orang tua dan ibu muda 
-             <br>tentang tips  menjaga  pertumbuhan dan perkembangan anak
-             <br> sehingga dapat menciptakan 
-             keluarga yang berkualitas dan beredukasi .</p>
-    <button class="hire-btn">Orang Tua</button>
-    <button class="down-cv">Anak</button>
-    <button class="hire-btn"> Ibu Muda</button>
-   </div>
-         <img alt="model" class="model" src="../images/heros/logo.png");">  
-  </article>
+    <article class="about-us">
 
+        <div class="text-container">
+          <p>Hello,</p>
+          <p>WE ARE PAFA</p>
+          <p>Parenting And Family Website</p>
+                <p>PAFA adalah ruang belajar parenting ,family, dan pendidikan. 
+                <br>Disini menyajikan informasi  yang dibutuhkan orang tua dan ibu muda 
+                <br>tentang tips  menjaga  pertumbuhan dan perkembangan anak
+                <br> sehingga dapat menciptakan 
+                keluarga yang berkualitas dan beredukasi .</p>
+        <div class="tombol">
+            <button class="hire-btn">Orang Tua</button>
+            <button class="down-cv">Anak</button>
+            <button class="hire-btn"> Ibu Muda</button>
+        </div>
+        
+      </div>
+
+      <img alt="model" class="model" src="../images/heros/logo.png");">  
+
+  </article>
   
   <article class="namatim">
   <h1 class="namatim-label">List Our team</h1>
