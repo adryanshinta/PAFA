@@ -31,6 +31,15 @@ const Beranda = {
                       <img src="../images/heros/orangtua.jpg");
                       class="featured-image" alt="ibumuda">
           </article>
+          <div class="pafa-item">
+            <div class="pafa-item__header">
+              <img class="pafa-item__header__poster" alt="Orangtua"
+                  src="../images/heros/orangtua.jpg">
+            </div>
+            <div class="pafa-item__content">
+              <h3><a href="#">Orang Tua</a></h3>
+            </div>
+          </div>
       
         </article>
         <div class="content">
