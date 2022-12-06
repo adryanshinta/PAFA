@@ -632,6 +632,33 @@ about-us
   cursor: pointer;
 }
 
+/* role */
+
+.role{
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+}
+.role .card{
+  display: inline-block;
+  background: yellow;
+  border-radius: 10px;
+  align-items: center;
+  width: auto;
+  padding: 10px;
+  padding-left: 5px;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+}
+
+.dlink{
+  text-decoration: none;
+  color: white;
+}
    
   /*
     Footer

@@ -14,20 +14,20 @@ const Beranda = {
         <article class="data">
      
           <article id="orangtua" class="card">
-                      <h2 class="tagline">Orangtua</h2>
+                      <h2 class="tagline"><a href="#/orangtua" class="dlink">Orang Tua</a></h2>
                       <img src="../images/heros/orangtua.jpg");
                       class="featured-image" alt="orangtua">
           </article>
           
           <article id="anak" class="card">
-                      <h2 class="tagline">Anak</h2>
+                      <h2 class="tagline"><a href="#/anak" class="dlink">Anak</a></h2>
                       <img src="../images/heros/anak.jpg");
                       class="featured-image" alt="orangtua">
           </article>
       
           
           <article id="ibumuda" class="card">
-                      <h2 class="tagline">Ibu Muda</h2>
+                      <h2 class="tagline"><a href="#/ibumuda" class="dlink">Ibu Muda</a></h2>
                       <img src="../images/heros/orangtua.jpg");
                       class="featured-image" alt="ibumuda">
           </article>
