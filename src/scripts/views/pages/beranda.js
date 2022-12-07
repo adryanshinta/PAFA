@@ -28,7 +28,7 @@ const Beranda = {
                   src="../images/heros/anak.jpg">
             </div>
             <div class="pafa-item__content">
-              <h3><a href="#">Anak</a></h3>
+              <h3><a href="#/anak">Anak</a></h3>
             </div>
           </div>
 

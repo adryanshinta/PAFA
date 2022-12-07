@@ -1,7 +1,7 @@
 import Beranda from '../views/pages/beranda';
 import About from '../views/pages/about-us';
 import Detail from '../views/pages/detail';
-import Login from '../views/pages/login';
+import AnakPage from '../views/pages/anak';
 import Like from '../views/pages/like';
 
 const routes = {
@@ -9,7 +9,7 @@ const routes = {
   '/beranda': Beranda,
   '/about-us': About,
   '/like': Like,
-  '/login': Login,
+  '/anak': AnakPage,
   '/detail/:id': Detail,
 };
 
