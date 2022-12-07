@@ -37,7 +37,8 @@ const createPafaItemTemplate = (restoran) => `
   <div class="pafa-item">
     <div class="pafa-item__header">
       <img class="pafa-item__header__poster" alt="${restoran.name}"
-           src="${restoran.pictureId ? CONFIG.BASE_IMAGEITEM_URL + restoran.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}">
+           src="${restoran.pictureId ? CONFIG.BASE_IMAGEITEM_URL + restoran.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" 
+           style="height:200px;">
       <div class="pafa-item__header__rating">
         <p>⭐️<span class="pafa-item__header__rating__score">${restoran.rating}</span></p>
       </div>

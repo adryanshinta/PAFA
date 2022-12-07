@@ -312,6 +312,8 @@ data
 .data{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  margin-bottom: 20px;
 }
 
 .featured-image {
@@ -413,6 +415,12 @@ login
 about-us
 */
 
+.about-us{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
 .text-container p:nth-child(1){
   font-family: calibri;
   font-weight: bold;
@@ -420,10 +428,9 @@ about-us
   font-size: 22px;
   }
   
-  .text-container p:nth-child(2){
+  .text-container p{
   font-family: calibri;
   font-weight: bold;
-  letter-spacing: 2px;
   color: #1a1a1a;
   font-size: 60px;
   }
@@ -444,7 +451,6 @@ about-us
   }
   
   .text-container p{
-  line-height: 0px;
   margin: 55px 0px 25px;
   }
   
@@ -472,6 +478,7 @@ about-us
   .hire-btn{
   border: 2px solid #373636;
   color: #373636;
+  margin: 10px ;
   }
   
   .down-cv{
@@ -486,12 +493,13 @@ about-us
   
   .model{
   height: 300px;
-  position: relative;
-  bottom: 360px;
-  left: 80%;
-  transform: translateX(-70%);
+
    }
   
+  .tombol{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   
   /*
   namaprofil
@@ -500,7 +508,6 @@ about-us
     width: 95%;
     margin: 5px ;
     text-align: center;
-    margin-top: -250px;
     }
     
     .namatim-label {
@@ -511,8 +518,6 @@ about-us
     }
     
     .utama-label::after {
-    content: '';
-    display: block;
     border-bottom: 1px solid color #D27C2C;
     }
   
@@ -531,13 +536,10 @@ about-us
      }
   
    .our-team{
-    top: 20px;
     margin: 10px;
     padding: 10px;
-    left: 5px;
     text-align: center;
     overflow: hidden;
-    position: relative;
     margin-left: 10px;
     padding: 20px;
     margin-top: 15px;
@@ -549,9 +551,6 @@ about-us
     object-fit: cover;
     object-position: center;
     }
-  
-  
-  
   
   .our-team .pic{
      width: 100%;
