@@ -8,7 +8,7 @@ import LikeButtonInitiator from '../../utils/like-button-initiator';
 const Detail = {
   async render() {
     return `
-      <div id="restoran" class="restoran"></div>
+      <div id="pafa" class="pafa"></div>
       <div id="likeButtonContainer"></div>
       `;
   },
@@ -16,7 +16,7 @@ const Detail = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const pafamily = await PafaDbSource.detailPafa(url.id);
-    const pafaContainer = document.querySelector('#restoran');
+    const pafaContainer = document.querySelector('#pafa');
 
     pafaContainer.innerHTML = createPafaDetailTemplate(pafamily);
 

@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 import dataJSON from '../../data/ANAK.json';
 import PafaDbSource from '../../data/pafadb-source';
-import { createAnakPafaItemTemplate } from '../templates/template-creator';
+import { createAnakPafaItemTemplate } from '../templates/template-anak';
 
 const AnakPage = {
   async render() {

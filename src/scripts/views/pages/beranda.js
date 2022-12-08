@@ -18,7 +18,7 @@ const Beranda = {
                   src="../images/heros/orangtua.jpg">
             </div>
             <div class="pafa-item__content">
-              <h3><a href="#">Orang Tua</a></h3>
+              <h3><a href="#/orangtua">Orang Tua</a></h3>
             </div>
           </div>
 
@@ -34,11 +34,11 @@ const Beranda = {
 
           <div class="pafa-item">
             <div class="pafa-item__header">
-              <img class="pafa-item__header__poster" alt="Orangtua"
+              <img class="pafa-item__header__poster" alt="ibumuda"
                   src="../images/heros/orangtua.jpg">
             </div>
             <div class="pafa-item__content">
-              <h3><a href="#">Ibu Muda</a></h3>
+              <h3><a href="#/ibumuda">Ibu Muda</a></h3>
             </div>
           </div>
       
