@@ -43,20 +43,13 @@ const Beranda = {
           </div>
       
         </article>
-        <div class="content">
-        <h2 class="content__heading">Restoran Yang Kami Rekomendasikan</h2>
-          <div id="pafas" class="pafas">
-          </div>
-        </div>
+       
       `;
   },
 
   async afterRender() {
     const pafamilys = await PafaDbSource.listPafa();
     const restosContainer = document.querySelector('#pafas');
-    pafamilys.forEach((pafa) => {
-      restosContainer.innerHTML += createPafaItemTemplate(pafa);
-    });
   },
 };
 

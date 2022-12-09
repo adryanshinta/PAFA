@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import dataJSON from '../../data/ANAK.json';
+import anaks from '../../data/ANAK.json';
 import PafaDbSource from '../../data/pafadb-source';
 import { createAnakPafaItemTemplate } from '../templates/template-anak';
 
@@ -16,9 +16,8 @@ const AnakPage = {
   },
 
   async afterRender() {
-    const { anaks } = JSON.parse(JSON.stringify(dataJSON));
     const pafasContainer = document.querySelector('#pafas');
-    anaks.forEach((pafa) => {
+    anaks.anaks.forEach((pafa) => {
       pafasContainer.innerHTML += createAnakPafaItemTemplate(pafa);
     });
   },

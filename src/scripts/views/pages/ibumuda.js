@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import dataJSON from '../../data/IBUMUDA.json';
+import ibumudas from '../../data/IBUMUDA.json';
 import PafaDbSource from '../../data/pafadb-source';
 import { createIbuMudaPafaItemTemplate } from '../templates/template-ibumuda';
 
@@ -16,9 +16,8 @@ const IbuMudaPage = {
   },
 
   async afterRender() {
-    const { ibumudas } = JSON.parse(JSON.stringify(dataJSON));
     const pafasContainer = document.querySelector('#pafas');
-    ibumudas.forEach((pafa) => {
+    ibumudas.ibumudas.forEach((pafa) => {
       pafasContainer.innerHTML += createIbuMudaPafaItemTemplate(pafa);
     });
   },

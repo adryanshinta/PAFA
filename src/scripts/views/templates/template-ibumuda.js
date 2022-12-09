@@ -1,28 +1,15 @@
-const createIbuMudaPafaDetailTemplate = (ibumuda) => `
-<h2 class="pafa__title">${ibumuda.name}</h2>
-<img class="pafa__poster" src="${ibumuda.pictureId}" alt="${ibumuda.name}" />
-<div class="pafa__info" >
-  <h3>Information</h3>
-  <h4>Penulis</h4>
-  <p>${ibumuda.penulis}</p>
-</div>
-<div class="pafa__overview">
-  <h3>Tanggal Terbit</h3>
-  <p>${ibumuda.tglterbit}</p>
-  <h3>Overview</h3>
-  <p>${ibumuda.description}</p>
-</div>
-`;
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const createIbuMudaPafaItemTemplate = (ibumuda) => `
 <div class="pafa-item">
   <div class="pafa-item__header">
-    <img class="pafa-item__header__poster" alt="${ibumuda.name}"
-         src="${ibumuda.pictureId}" 
+    <img class="pafa-item__header__poster lazyload" alt="${ibumuda.name}"
+         data-src="${ibumuda.pictureId}" 
          style="height:200px;">
   </div>
   <div class="pafa-item__content">
-    <h3><a href="/#/detail-anak/${ibumuda.id}">${ibumuda.name}</a></h3>
+    <h3><a href="/#/detail-ibumuda/${ibumuda.id}">${ibumuda.name}</a></h3>
     <p>${ibumuda.description}</p>
   </div>
 </div>
@@ -41,7 +28,6 @@ const createLikedButtonTemplate = () => `
 `;
 
 export {
-  createIbuMudaPafaDetailTemplate,
   createIbuMudaPafaItemTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,

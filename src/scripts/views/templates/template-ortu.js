@@ -1,28 +1,15 @@
-const createOrangTuaPafaDetailTemplate = (orangtua) => `
-<h2 class="pafa__title">${orangtua.name}</h2>
-<img class="pafa__poster" src="${orangtua.pictureId}" alt="${orangtua.name}" />
-<div class="pafa__info" >
-  <h3>Information</h3>
-  <h4>Penulis</h4>
-  <p>${orangtua.penulis}</p>
-</div>
-<div class="pafa__overview">
-  <h3>Tanggal Terbit</h3>
-  <p>${orangtua.tglterbit}</p>
-  <h3>Overview</h3>
-  <p>${orangtua.description}</p>
-</div>
-`;
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const createOrangTuaPafaItemTemplate = (orangtua) => `
 <div class="pafa-item">
   <div class="pafa-item__header">
-    <img class="pafa-item__header__poster" alt="${orangtua.name}"
-         src="${orangtua.pictureId}" 
+    <img class="pafa-item__header__poster lazyload" alt="${orangtua.name}"
+         data-src="${orangtua.pictureId}" 
          style="height:200px;">
   </div>
   <div class="pafa-item__content">
-    <h3><a href="/#/detail-anak/${orangtua.id}">${orangtua.name}</a></h3>
+    <h3><a href="/#/detail-orangtua/${orangtua.id}">${orangtua.name}</a></h3>
     <p>${orangtua.description}</p>
   </div>
 </div>
@@ -41,7 +28,6 @@ const createLikedButtonTemplate = () => `
 `;
 
 export {
-  createOrangTuaPafaDetailTemplate,
   createOrangTuaPafaItemTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
