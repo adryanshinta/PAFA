@@ -1,9 +1,8 @@
 import CONFIG from './config';
 
 const API_ENDPOINT = {
-  NOW: `${CONFIG.BASE_URL}list`,
-  DETAIL: (id) => `${CONFIG.BASE_URL}detail/${id}`,
-  POST_REVIEW: `${CONFIG.BASE_URL}review`,
+  NEWS: `${CONFIG.BASE_URL}apiKey=${CONFIG.API_KEY}`,
+  DETAIL: (id) => `${CONFIG.BASE_URL}apiKey=${CONFIG.API_KEY}/${id}`,
 };
 
 export default API_ENDPOINT;
