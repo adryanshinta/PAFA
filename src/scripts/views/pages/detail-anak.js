@@ -3,7 +3,7 @@
 /* eslint-disable no-alert */
 import UrlParser from '../../routes/url-parser';
 import anaks from '../../data/ANAK.json';
-import { createAnakPafaDetailTemplate, createAnakPafaItemTemplate } from '../templates/template-anak';
+import { createMovieDetailTemplate, createLikeButtonTemplate } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detailanak = {
@@ -18,7 +18,7 @@ const Detailanak = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const { id } = url;
     const pafaContainer = document.querySelector('#pafa');
-    const detailIlkom = () => {
+    const detailanak = () => {
       pafaContainer.innerHTML
             += ` 
             <h2 class="pafa__title">${anaks.anaks[id - 1].name}</h2>
@@ -35,7 +35,10 @@ const Detailanak = {
               <p>${anaks.anaks[id - 1].description}</p>
             </div>`;
     };
-    detailIlkom();
+    detailanak();
+
+    const likeButtonContainer = document.querySelector('#likeButtonContainer');
+    likeButtonContainer.innerHTML = createLikeButtonTemplate();
   },
 };
 

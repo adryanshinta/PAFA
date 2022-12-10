@@ -3,8 +3,6 @@
 /* eslint-disable no-alert */
 import UrlParser from '../../routes/url-parser';
 import ibumudas from '../../data/IBUMUDA.json';
-import { createAnakPafaDetailTemplate, createAnakPafaItemTemplate } from '../templates/template-anak';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const DetailIbuMuda = {
   async render() {

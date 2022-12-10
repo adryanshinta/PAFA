@@ -1,11 +1,9 @@
 const CONFIG = {
-  BASE_URL: 'https://restaurant-api.dicoding.dev/',
-  BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/medium/',
-  BASE_IMAGEITEM_URL: 'https://restaurant-api.dicoding.dev/images/small/',
+  API_KEY: 'b2d8cb4102054635bbd9a4e6da1ac894',
+  BASE_URL: 'https://newsapi.org/v2/top-headlines?country=us&category=health&',
   DATABASE_NAME: 'pafa-catalogue-database',
   DATABASE_VERSION: 1,
   OBJECT_STORE_NAME: 'pafas',
-  WEB_SOCKET_SERVER: 'wss://Pafas-feed.dicoding.dev',
 };
 
 export default CONFIG;

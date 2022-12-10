@@ -8,7 +8,7 @@ const OrtuPage = {
   async render() {
     return `
         <div class="content">
-        <h2 class="content__heading">Artikel Yang Kami Rekomendasikan</h2>
+        <h2 class="content__heading">Hallo, Berikut Artikel Orangtua Yang Kami Rekomendasikan</h2>
           <div id="pafas" class="pafas">
           </div>
         </div>

@@ -1,10 +1,9 @@
+/* eslint-disable no-undef */
 /* eslint-disable import/named */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-alert */
 import UrlParser from '../../routes/url-parser';
 import orangtuas from '../../data/ORANGTUA.json';
-import { createAnakPafaDetailTemplate, createAnakPafaItemTemplate } from '../templates/template-anak';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const DetailOrangTua = {
   async render() {

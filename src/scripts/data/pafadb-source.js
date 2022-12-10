@@ -3,15 +3,15 @@ import API_ENDPOINT from '../globals/api-endpoint';
 
 class PafaDbSource {
   static async listPafa() {
-    const response = await fetch(API_ENDPOINT.NOW);
+    const response = await fetch(API_ENDPOINT.NEWS);
     const responseJson = await response.json();
-    return responseJson.restaurants;
+    return responseJson.articles;
   }
 
   static async detailPafa(id) {
     const response = await fetch(API_ENDPOINT.DETAIL(id));
     const responseJson = await response.json();
-    return responseJson.restaurant;
+    return responseJson.article;
   }
 
   static async postRestaurant(data) {

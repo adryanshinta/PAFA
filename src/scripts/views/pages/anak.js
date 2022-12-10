@@ -8,7 +8,7 @@ const AnakPage = {
   async render() {
     return `
         <div class="content">
-        <h2 class="content__heading">Restoran Yang Kami Rekomendasikan</h2>
+        <h2 class="content__heading"> Hallo, Berikut Artikel Anak Yang Kami Rekomendasikan</h2>
           <div id="pafas" class="pafas">
           </div>
         </div>
