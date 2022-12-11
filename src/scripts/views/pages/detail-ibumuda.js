@@ -3,6 +3,8 @@
 /* eslint-disable no-alert */
 import UrlParser from '../../routes/url-parser';
 import ibumudas from '../../data/IBUMUDA.json';
+import { createLikeButtonTemplate } from '../templates/template-creator';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const DetailIbuMuda = {
   async render() {
@@ -34,6 +36,9 @@ const DetailIbuMuda = {
             </div>`;
     };
     detailIbumuda();
+
+    const likeButtonContainer = document.querySelector('#likeButtonContainer');
+    likeButtonContainer.innerHTML = createLikeButtonTemplate();
   },
 };
 
