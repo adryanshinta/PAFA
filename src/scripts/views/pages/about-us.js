@@ -13,10 +13,13 @@ const About = {
                 <br>tentang tips  menjaga  pertumbuhan dan perkembangan anak
                 <br> sehingga dapat menciptakan 
                 keluarga yang berkualitas dan beredukasi .</p>
+
         <div class="tombol">
-            <button class="hire-btn">Orang Tua</button>
-            <button class="down-cv">Anak</button>
-            <button class="hire-btn"> Ibu Muda</button>
+        
+        <button class="hire-btn"><a href="#/orangtua">Orangtua</a></button>
+        <button class="down-cv"><a href="#/anak">Anak</a> </button>
+        <button class="hire-btn"><a href="#/ibumuda">Ibumuda</a> </button>
+
         </div>
         
       </div>

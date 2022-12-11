@@ -35,6 +35,8 @@ const DetailOrangTua = {
             </div>`;
     };
     detailOrangTua();
+    const likeButtonContainer = document.querySelector('#likeButtonContainer');
+    likeButtonContainer.innerHTML = createLikeButtonTemplate();
   },
 };
 

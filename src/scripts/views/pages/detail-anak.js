@@ -3,7 +3,7 @@
 /* eslint-disable no-alert */
 import UrlParser from '../../routes/url-parser';
 import anaks from '../../data/ANAK.json';
-import { createMovieDetailTemplate, createLikeButtonTemplate } from '../templates/template-creator';
+import { createLikeButtonTemplate } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detailanak = {
