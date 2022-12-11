@@ -1,7 +1,7 @@
 # Hi, Welcome to PAFA "Parenting and Family Solution"
 
 ## Pafa User Manual Guide
-- First, visit https://pafaparenting.netlify.app
+- First, visit https://parentingpafa.netlify.app
 - In the home page, please select your role (Parent, Children or Young Mother) to find out and explore any article about it.
 - After select a role, then enjoy exploring our content.
 - If you interest with an article you can select it by click your mouse, then enjoy reading the article.
