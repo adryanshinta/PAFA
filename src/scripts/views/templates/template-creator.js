@@ -6,7 +6,7 @@ const createLikeButtonTemplate = () => `
 `;
 
 const createLikedButtonTemplate = () => `
-  <button aria-label="unlike this movie" id="likeButton" class="like">
+  <button aria-label="unlike this movie" id="likeButton" class="like liked">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;

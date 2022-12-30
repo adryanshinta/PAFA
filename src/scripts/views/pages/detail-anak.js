@@ -3,7 +3,7 @@
 /* eslint-disable no-alert */
 import UrlParser from '../../routes/url-parser';
 import anaks from '../../data/ANAK.json';
-import { createLikeButtonTemplate } from '../templates/template-creator';
+import { createLikeButtonTemplate, createLikedButtonTemplate } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detailanak = {
@@ -38,6 +38,14 @@ const Detailanak = {
     detailanak();
 
     const likeButtonContainer = document.querySelector('#likeButtonContainer');
+    likeButtonContainer.addEventListener('click', () => {
+      if (document.getElementsByClassName('liked')[0]) {
+        likeButtonContainer.innerHTML = createLikeButtonTemplate();
+      } else {
+        likeButtonContainer.innerHTML = createLikedButtonTemplate();
+      }
+    });
+
     likeButtonContainer.innerHTML = createLikeButtonTemplate();
   },
 };
